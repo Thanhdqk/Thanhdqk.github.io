@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            column-span: all; 
+            display: inline-flex;
+        }
+        .header h2{
+            padding-left: 30px;
+            color: blue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .header ul li a{
+            text-decoration: none;
+            padding-right: 20px;
+        }
+        .header ul{
+            list-style: none;
+            
+            display: inline-flex;
+            padding-left: 800px;
+        }
+        .left{
+            column-width: 500px;
+            background-color: gainsboro;
+            height: 480px;
+            column-gap: 10px;
+        }
+        .left img{
+            padding-top: 80px;
+            padding-left: 100px;
+            width: 400px;
+            height: 400px;
+        }
+        .right{
+            margin-top: 100px;
+            text-align: center;
+
+        }
+        .right img{
+            width: 40px;
+            height: 40px;
+        }
+        input[type=text]{
+            width: 250px;
+            line-height: 30px;
+            border-radius: 5px;
+        }
+        .quen{
+            color: blue;
+            margin-right: 150px;
+        }
+        .dn{
+            color: white;
+            background-color: blue;
+            padding: 5px 100px;
+        }
+        .dongy{
+            margin-left: 200px;
+            font-size: smaller;
+            width: 300px;
+            text-align: left;
+        }
+        .anh{
+            display: inline-flex;
+            padding-right: 10px;
+        }
+        .anh img{
+            text-align: center;
+
+            padding-right: 20px;
+        }
+        .column{
+            column-count: 2;
+            column-fill: auto;
+            column-width: 600px;
+        }
+    </style>
+    <div class="header">
+        <h2>ZOOM</h2>
+        <ul>
+            <li><a href="#">Mới biết đến Zoom</a></li>
+            <li><a href="#">Đăng kí miễn phí</a></li>
+            <li><a href="#">Hổ trợ</a></li>
+            <li><a href="#">Tiếng Việt</a></li>
+        </ul>
+    </div>
+    <hr>
+    
+    <div class="column">
+        <div class="left">
+            <img src="hinh/banner-step-1.2faf107a.png" alt="">
+        </div>
+    
+        <div class="right">
+            <h1>Đăng nhập</h1>
+            <input type="text" name="" id="" placeholder="Địa chỉ email">
+            <br>
+            <br>
+            <input type="text" name="" id="" placeholder="Mật khẩu">
+            <br>
+            <br>
+            <label class="quen" for="">Quên mật khẩu</label>
+            <br>
+            <br>
+            <label class="dn" for="">Đăng nhập</label>
+            <br>
+            <br>
+            <p class="dongy">Khi đăng nhập tôi đồng ý với tuyên bố về quyền riêng tư và điều khoản dịch vụ của Zoom</p>
+            <br>
+            <label for="">Vẫn đăng nhập</label>
+            <br><br>
+            <label for="">Hoặc đăng nhập bằng</label>
+            <br><br>
+            <div class="anh">
+                <img src="hinh/house-key.png" alt="">
+                <p>SSO</p>
+                <img src="hinh/apple-black-logo.png" alt="">
+                <p>Apple</p>
+                <img src="hinh/search (1).png" alt="">
+                <p>Google</p>
+                <img src="hinh/facebook (1).png" alt="">
+                <p>Facebook</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
